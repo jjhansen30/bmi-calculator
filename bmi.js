@@ -15,12 +15,6 @@ app.post("/",function(req,res){
   var feetToInches = heightFt * 12;
   var totalHeight = Number(feetToInches + heightIn);
   var bmi = 703 * Math.floor((weight / (totalHeight ** 2)));
-  console.log("heightFt: " + heightFt);
-  console.log("heightIn: " + heightIn);
-  console.log("wieght: " + weight);
-  console.log("feetToInches: " + feetToInches);
-  console.log("totalHeight: " + totalHeight);
-  console.log("bmi: " + bmi);
 
   res.send('Your BMI is ' + bmi);
 })
